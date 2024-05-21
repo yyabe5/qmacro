@@ -17,7 +17,7 @@ log_china_gdp = np.log(china_gdp)
 
 # calculate the quarterly percent change in real GDP
 japan_gdp_pct_change = japan_gdp.pct_change(4)
-china_gdp = china_gdp.pct_change(4)
+china_gdp_pct_change = china_gdp.pct_change(4)
 
 # apply a Hodrick-Prescott filter to the data to extract the cyclical component
 japan_cycle = sm.tsa.filters.hpfilter(log_japan_gdp)
